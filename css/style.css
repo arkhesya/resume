@@ -1,0 +1,75 @@
+/* Palette de couleurs */
+:root {
+    --purple: #552c63;
+    --light-purple: #f4eff6;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* Titres principaux avec la barre à gauche */
+.cv-header {
+    color: var(--purple);
+    font-weight: bold;
+    border-left: 6px solid var(--purple);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Titres de la colonne de gauche */
+.cv-title-sm {
+    color: var(--purple);
+    font-weight: bold;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Personnalisation des cartes */
+.cv-card {
+    border: none;
+    border-left: 5px solid var(--purple) !important; /* Force la bordure en violet */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(85, 44, 99, 0.2) !important;
+}
+
+/* Badges de dates */
+.cv-badge {
+    background-color: var(--purple) !important;
+    color: white;
+}
+
+.cv-badge-alt {
+    background-color: var(--light-purple) !important;
+    color: var(--purple) !important;
+    border: 1px solid var(--purple);
+}
+
+/* Liens */
+.cv-link {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cv-link:hover {
+    text-decoration: underline;
+}
+
+/* Utilitaires de texte */
+.cv-text-purple {
+    color: var(--purple);
+}
+
+.cv-border-purple {
+    border-color: var(--purple) !important;
+}
